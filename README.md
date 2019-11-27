@@ -1,7 +1,6 @@
 # Udacity_self_driving_car
 
-This repository contains the notes and project file about Udacity's Self-Driving Car Engineer Nanodegree program, which I started on 10 July, 2019. This is a online course for learning the technology and programing of autonomouse driving system. 
-The program is developed by Udacity in partnership with Mercedes-Benz, NVIDIA,etc.
+This repository contains the notes and project file about Udacity's Self-Driving Car Engineer Nanodegree program, which I started on 10 July, 2019. This is a online course for learning the technology and programing of autonomouse driving system. The program is developed by Udacity in partnership with Mercedes-Benz, NVIDIA,etc.
 
 # Program Outline:
 
@@ -11,10 +10,7 @@ Term 1: Computer Vision, Deep Learning, and Sensor Fusion
 
    Project 1: Finding Lane Lines 
    
-   ・Summary: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and 
-              
-              Canny edge detection etc.
-              
+   ・Summary : Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
    ・Solution: Python
 
    Project 2: Advanced Lane Finding
