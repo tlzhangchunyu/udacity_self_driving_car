@@ -15,10 +15,18 @@ Term 1: Computer Vision, Deep Learning, and Sensor Fusion
    **Solution**: Python
 
    Project 2: Advanced Lane Finding
+   
+   **Summary**: Detect the lane of highway from a video with camera calibration, color spaces, and sliding window etc.
+   
+   **Solution**: Python
 
 2. Deep Learning
 
    Project 3: Traffic Sign Classifier
+   
+   **Summary**: Build a CNN(Convolutional Neural Networks) to determine the traffic sign from the German Traffic Sign Dataset.
+   
+   **Solution**: Python
 
    Project 4: Behavioural Cloning
 
