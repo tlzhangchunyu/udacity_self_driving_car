@@ -11,6 +11,7 @@ Term 1: Computer Vision, Deep Learning, and Sensor Fusion
    Project 1: Finding Lane Lines 
    
    **Summary**: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
+   
    **Solution**: Python
 
    Project 2: Advanced Lane Finding
