@@ -6,7 +6,7 @@ This repository contains the notes and project file about Udacity's Self-Driving
 
 ## Term 1: Computer Vision, Deep Learning, and Sensor Fusion
 
-#### Project 1: Finding Lane Lines(Computer Vision) 
+### Project 1: Finding Lane Lines(Computer Vision) 
    
 **Summary**: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
    
@@ -14,7 +14,7 @@ This repository contains the notes and project file about Udacity's Self-Driving
 
 ### Project 2: Advanced Lane Finding(Computer Vision) 
    
-**Summary**: Detect the lane of highway from a video with camera calibration, color spaces, and sliding window etc.
+**Summary**: Detect the lane of highway from a video with camera calibration, color transfroms, and sliding window etc.
    
 **Solution**: Python
 
@@ -31,24 +31,31 @@ This repository contains the notes and project file about Udacity's Self-Driving
 **Solution**: Python, Keras
 
 ### Project 5: Extended Kalman Filters(Sensor Fusion)
-**Summary**: Build and train a CNN(Convolutional Neural Networks) with the library of Keras to control the car can run around the track.
+
+**Summary**: Write kalman filters with C++. Use the sensor fusion of LiDAR and RADAR measurement to estimate the position.
    
-**Solution**: Python, Keras
+**Solution**: C++
 
-Term 2: Localization, Path Planning, Control, and System Integration
+## Term 2: Localization, Path Planning, Control, and System Integration
 
-1. Localisation
+### Project 6: Kidnapped Vehicle (Localisation)
 
-   Project 6: Kidnapped Vehicle (Particle Filters)
+**Summary**: Use particle filters to locate a car relative to the world. 
+   
+**Solution**: C++
 
-2. Path Planning
+### Project 7: Highway Driving(Path Planning)
 
-   Project 7: Highway Driving
+**Summary**: With the sensor fusion data make the car running on the highway, set the requirement such as speed, acceleration, jerk, the safety distance to oter cars, and on. Make sure the car can smooth and safe run on the track.
+   
+**Solution**: C++
 
-3. Control
+### Project 8: PID Controller(Control)
 
-   Project 8: PID Controller
+**Summary**: Write a controller of PID with C++. Make sure the car could run around the track, but no tire may leave the drivable portion of the track surface.
+   
+**Solution**: C++
 
-4. Road Segmentation
+### Final Project: Program an Autonomous Vehicle
 
-   Put your code in a self-driving car
+**Summary**: Complete the simulation make sure the car can run around the track, and then put your code in a self-driving car
