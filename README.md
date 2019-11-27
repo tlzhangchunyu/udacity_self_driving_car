@@ -6,15 +6,13 @@ This repository contains the notes and project file about Udacity's Self-Driving
 
 ### Term 1: Computer Vision, Deep Learning, and Sensor Fusion
 
-#### 1. Computer Vision
-
-   ##### Project 1: Finding Lane Lines 
+#### Project 1: Finding Lane Lines(Computer Vision) 
    
    **Summary**: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
    
    **Solution**: Python
 
-   Project 2: Advanced Lane Finding
+   Project 2: Advanced Lane Finding(Computer Vision) 
    
    **Summary**: Detect the lane of highway from a video with camera calibration, color spaces, and sliding window etc.
    
