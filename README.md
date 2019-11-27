@@ -4,11 +4,11 @@ This repository contains the notes and project file about Udacity's Self-Driving
 
 # Program Outline:
 
-Term 1: Computer Vision, Deep Learning, and Sensor Fusion
+### Term 1: Computer Vision, Deep Learning, and Sensor Fusion
 
-1. Computer Vision
+#### 1. Computer Vision
 
-   Project 1: Finding Lane Lines 
+   ##### Project 1: Finding Lane Lines 
    
    **Summary**: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
    
