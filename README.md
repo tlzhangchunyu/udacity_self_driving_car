@@ -9,34 +9,35 @@ Term 1: Computer Vision, Deep Learning, and Sensor Fusion
 
 1. Computer Vision
 
-  Project 1: Finding Lane Lines 
+   Project 1: Finding Lane Lines 
+   ・Summary: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
 
-  Project 2: Advanced Lane Finding
+   Project 2: Advanced Lane Finding
 
 2. Deep Learning
 
-  Project 3: Traffic Sign Classifier
+   Project 3: Traffic Sign Classifier
 
-  Project 4: Behavioural Cloning
+   Project 4: Behavioural Cloning
 
 3. Sensor Fusion
 
-  Project 5: Extended Kalman Filters
+   Project 5: Extended Kalman Filters
 
 Term 2: Localization, Path Planning, Control, and System Integration
 
 1. Localisation
 
-  Project 6: Kidnapped Vehicle (Particle Filters)
+   Project 6: Kidnapped Vehicle (Particle Filters)
 
 2. Path Planning
 
-  Project 7: Highway Driving
+   Project 7: Highway Driving
 
 3. Control
 
-  Project 8: PID Controller
+   Project 8: PID Controller
 
-4.Road Segmentation
+4. Road Segmentation
 
-  Put your code in a self-driving car
+   Put your code in a self-driving car
