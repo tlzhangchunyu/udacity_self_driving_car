@@ -4,33 +4,36 @@ This repository contains the notes and project file about Udacity's Self-Driving
 
 # Program Outline:
 
-### Term 1: Computer Vision, Deep Learning, and Sensor Fusion
+## Term 1: Computer Vision, Deep Learning, and Sensor Fusion
 
-#### Project 1: Finding Lane Lines(Computer Vision) 
+### Project 1: Finding Lane Lines(Computer Vision) 
    
-   **Summary**: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
+**Summary**: Detect the lane of highway from a video. Used OpencV image techniques suck as Hough Transforms and Canny edge detection etc.
    
-   **Solution**: Python
+**Solution**: Python
 
-   Project 2: Advanced Lane Finding(Computer Vision) 
+### Project 2: Advanced Lane Finding(Computer Vision) 
    
-   **Summary**: Detect the lane of highway from a video with camera calibration, color spaces, and sliding window etc.
+**Summary**: Detect the lane of highway from a video with camera calibration, color spaces, and sliding window etc.
    
-   **Solution**: Python
+**Solution**: Python
 
-2. Deep Learning
-
-   Project 3: Traffic Sign Classifier
+### Project 3: Traffic Sign Classifier(Deep Learning)
    
-   **Summary**: Build a CNN(Convolutional Neural Networks) to determine the traffic sign from the German Traffic Sign Dataset.
+**Summary**: Build a CNN(Convolutional Neural Networks) to determine the traffic sign from the German Traffic Sign Dataset.
    
-   **Solution**: Python
+**Solution**: Python, TensorFlow
 
-   Project 4: Behavioural Cloning
+### Project 4: Behavioural Cloning(Deep Learning)
 
-3. Sensor Fusion
+**Summary**: Build and train a CNN(Convolutional Neural Networks) with the library of Keras to control the car can run around the track.
+   
+**Solution**: Python, Keras
 
-   Project 5: Extended Kalman Filters
+### Project 5: Extended Kalman Filters(Sensor Fusion)
+**Summary**: Build and train a CNN(Convolutional Neural Networks) with the library of Keras to control the car can run around the track.
+   
+**Solution**: Python, Keras
 
 Term 2: Localization, Path Planning, Control, and System Integration
 
