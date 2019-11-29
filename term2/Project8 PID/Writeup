@@ -1,0 +1,23 @@
+[Intuition of the video]
+1.without control
+	The steer doesn't work, the went to the right 
+    
+2.with only P_control(proportional)
+	It had effect on the car'movement. If the car the right it turns hard to the left, if it's slightly to the left it turn slightly to the right.
+    But angle of steer was getting bigger，it didn't be convergence.
+    
+3.with only I_control(integral)
+	It doesn't work at all. In the lesson it only worked for offset.
+    
+4.with only D_control(differential)
+	It had worked for controlling the steer of the car, but it was very late. On the curve it cannot let the car turn back quickly.
+   
+5.with PID_control
+	As the video had shown it works well. The can can run around the track without leaving the road.
+    
+    
+[Discuss the final hyperparameters ]
+To determine the hyperparameters of the PID that the car can drive safely around the track, I used manual tuning and the twiddle algorithm.
+1. I set the hyperparameters of the PID (P=0.2, I=0.004, D=3.0) as the same as the introduction on lesson
+2. When the angle of the steer was getting bigger, I setted the P lower.
+3. I used twiddle to optimize, the need to pay attention to the optimization is that the faster the target speed,  value of D should be smaller.
