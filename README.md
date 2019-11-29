@@ -62,4 +62,4 @@ This repository contains the notes and project file about Udacity's Self-Driving
 
 ### Final Project: Program an Autonomous Vehicle
 
-**Summary**: Complete the simulation make sure the car can run around the track, and then put your code in a self-driving car
+**Summary**: Complete the simulation make sure the car can run around the track, and then put your code in a real self-driving car
