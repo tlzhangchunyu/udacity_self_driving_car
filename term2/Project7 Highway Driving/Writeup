@@ -1,0 +1,83 @@
+[Model Documentation]
+
+1. Setting the Variables
+   too_long_dist: Make sure my car is not too long from the front car.
+   safe_front_s : The clock of changeing lane. If the clock reached 40, and other lane is safe 
+                  the car should change lane.
+   safe_side_s  : Maybe the name of the variable is not well. I use the variable to check if it is
+                  safe to change lane. If the distance is less than 35, the car can not change lane.
+   front_too_close: Check the timing that the car should decelerate.
+   change_to_right_lane: Check the timing that the car could change to the right lane.
+   change_to_left_lane: Check the timing that the car could change to the left lane.
+                  
+2. The motion control of the car
+   Frist, check that if the car is running on the side of the road. I write the following code. If the
+   is running on the side of the road, it can not change lane to left or right
+   
+    if(lane==0)
+          {
+            change_to_left_lane=false;
+          }
+          if(lane==2)
+          {
+            change_to_right_lane=false;
+          }
+          
+    Second, check that if there are enough spaces for the car to change lane. I write the following code.
+    I have tested with other value, but 35 is better than others.
+    
+      if(d<(4*lane+4)&&(d>4*lane))
+            {                     
+              if((check_other_car_s>car_s)&&((check_other_car_s-car_s)<safe_side_s))
+              {
+                front_too_close=true;
+              }
+            }
+            if(d<(4*(lane+1)+4)&&(d>4*(lane+1)))
+            {
+              if((check_other_car_s>car_s)&&((check_other_car_s-car_s)<safe_side_s))
+              {
+                change_to_right_lane=false; 
+              }
+              if((check_other_car_s<car_s)&&((car_s-check_other_car_s)<safe_side_s))
+              {
+                change_to_right_lane=false; 
+              }
+            }
+            if(d<(4*(lane-1)+4)&&(d>4*(lane-1)))
+            {
+              if((check_other_car_s>car_s)&&((check_other_car_s-car_s)<safe_side_s))
+              {
+                change_to_left_lane=false;
+              }
+              if((check_other_car_s<car_s)&&((car_s-check_other_car_s)<safe_side_s))
+              {
+                change_to_left_lane=false; 
+              }
+            }
+            
+     Finally, I set the motion of the car, deceleration, changing left, changing right, and acceleration.
+     I write the following code. If the car is too closed to the front car, it should decelerate at the 
+     rate of 0.2, and record the times of deceleration, when the times of deceleration reached too_long_dist, 
+     the could change lane. In another side, the limit speed is 50, so when the speed of the car is lower than
+     49.5, it should accelerate at the rate of 0.2
+      
+      if(front_too_close)
+          {
+            ref_vel-=0.2;
+            too_long_dist+=1;
+            if(change_to_left_lane&&(too_long_dist>safe_front_s))
+            {
+              too_long_dist=0;
+              lane-=1;
+            }
+            else if(change_to_right_lane&&(too_long_dist>safe_front_s))
+            {
+              too_long_dist=0;
+              lane+=1;
+            }
+          }
+          else if(ref_vel<49.5)
+          {
+            ref_vel+=0.2;
+          }
